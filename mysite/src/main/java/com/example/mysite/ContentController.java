@@ -1,0 +1,24 @@
+package com.example.mysite;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class ContentController {
+	
+    @GetMapping("/home")
+    public String home() {
+        return "home";
+    }
+
+    @GetMapping("/admin/home")
+    public String adminHome() {
+        return "adminHome";
+    }
+
+    @GetMapping("/user/home")
+    public String userHome() {
+        return "userHome";
+    }
+}
